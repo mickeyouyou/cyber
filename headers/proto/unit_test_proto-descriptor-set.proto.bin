@@ -1,0 +1,16 @@
+
+Í
+cyber/proto/unit_test.protoapollo.cyber.proto"F
+UnitTest
+
+class_name (	R	className
+	case_name (	RcaseName"|
+Chatter
+	timestamp (R	timestamp'
+lidar_timestamp (RlidarTimestamp
+seq (Rseq
+content (Rcontent"T
+ChatterBenchmark
+stamp (Rstamp
+seq (Rseq
+content (	Rcontent

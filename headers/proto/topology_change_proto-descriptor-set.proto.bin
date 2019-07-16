@@ -1,0 +1,26 @@
+
+‡
+!cyber/proto/topology_change.protoapollo.cyber.proto!cyber/proto/role_attributes.proto"ª
+	ChangeMsg
+	timestamp (R	timestamp?
+change_type (2.apollo.cyber.proto.ChangeTypeR
+changeTypeB
+operate_type (2.apollo.cyber.proto.OperateTypeRoperateType9
+	role_type (2.apollo.cyber.proto.RoleTypeRroleType?
+	role_attr (2".apollo.cyber.proto.RoleAttributesRroleAttr*]
+
+ChangeType
+CHANGE_NODE
+CHANGE_CHANNEL
+CHANGE_SERVICE
+CHANGE_PARTICIPANT**
+OperateType
+OPT_JOIN
+	OPT_LEAVE*s
+RoleType
+	ROLE_NODE
+ROLE_WRITER
+ROLE_READER
+ROLE_SERVER
+ROLE_CLIENT
+ROLE_PARTICIPANT

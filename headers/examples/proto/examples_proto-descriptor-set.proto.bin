@@ -1,0 +1,16 @@
+
+å
+#cyber/examples/proto/examples.protoapollo.cyber.examples.proto"J
+SamplesTest1
+
+class_name (	R	className
+	case_name (	RcaseName"|
+Chatter
+	timestamp (R	timestamp'
+lidar_timestamp (RlidarTimestamp
+seq (Rseq
+content (Rcontent"W
+Driver
+content (	Rcontent
+msg_id (RmsgId
+	timestamp (R	timestamp

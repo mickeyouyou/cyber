@@ -1,0 +1,17 @@
+
+Þ
+ cyber/proto/scheduler_conf.protoapollo.cyber.protocyber/proto/classic_conf.proto#cyber/proto/choreography_conf.proto"h
+InnerThread
+name (	Rname
+cpuset (	Rcpuset
+policy (	Rpolicy
+prio (:1Rprio"ö
+SchedulerConf
+policy (	Rpolicy
+routine_num (R
+routineNum(
+default_proc_num (RdefaultProcNum0
+process_level_cpuset (	RprocessLevelCpuset9
+threads (2.apollo.cyber.proto.InnerThreadRthreadsB
+classic_conf (2.apollo.cyber.proto.ClassicConfRclassicConfQ
+choreography_conf (2$.apollo.cyber.proto.ChoreographyConfRchoreographyConf

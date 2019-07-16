@@ -1,0 +1,19 @@
+
+é
+cyber/proto/classic_conf.protoapollo.cyber.proto"W
+ClassicTask
+name (	Rname
+prio (:1Rprio
+
+group_name (	R	groupName"’
+
+SchedGroup
+name (	:default_grpRname#
+processor_num (RprocessorNum
+affinity (	Raffinity
+cpuset (	Rcpuset)
+processor_policy (	RprocessorPolicy(
+processor_prio (:0RprocessorPrio5
+tasks (2.apollo.cyber.proto.ClassicTaskRtasks"E
+ClassicConf6
+groups (2.apollo.cyber.proto.SchedGroupRgroups
