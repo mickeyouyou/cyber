@@ -1,16 +1,11 @@
 # Dag all comes in DAG streming.
 module_config {
-  module_library : "apollo_lite/bazel-bin/modules/example/libexample.so"
+  module_library : "/apollo/bazel-bin/modules/sensors/librealsense_component.so"
   components {
     class_name : "ExampleComponent"
     config {
-      name: "example"
-      readers {
-        channel : "/realsense/pose"
-      }
-      reader {
-        channel: " /realsense/raw_image"
-      }
+      name: "example_component"
+      #flag_file_path:  "/apollo/modules/sensors/conf/realsense.conf"
     }
   }
 }

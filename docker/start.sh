@@ -4,7 +4,7 @@
 #   ./build_geek_pcl.sh geek.Dockerfile
 
 ARCH=$(uname -m)
-IMG=geekstyle/geek_lite:cyber-x86_64-18.04-20191203_1704
+IMG=geekstyle/geek_lite:cyber-x86_64-18.04-20191203_2038
 
 CYBER_ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )/.." && pwd )"
 
