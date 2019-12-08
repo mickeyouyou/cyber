@@ -1,10 +1,5 @@
 package(default_visibility = ["//visibility:public"])
 
-cc_library(
-    name = "hello-greet",
-    srcs = ["hello-greet.cc"],
-    hdrs = ["hello-greet.h"],
-)
 
 cc_binary(
     name = "hello-world",
@@ -12,6 +7,13 @@ cc_binary(
     deps = [
         ":hello-greet",
     ],
+)
+
+
+cc_library(
+    name = "hello-greet",
+    srcs = ["hello-greet.cc"],
+    hdrs = ["hello-greet.h"],
 )
 
 cc_binary(
@@ -99,11 +101,6 @@ cc_binary(
 cc_binary(
     name = "camera",
     srcs = ["camera.cc"],
-    linkopts = [
-        "-lopencv_core",
-        "-lopencv_highgui",
-        "-lopencv_imgproc",
-    ],
     deps = [
         "//cyber",
         "//modules/examples/proto:examples_cc_proto",

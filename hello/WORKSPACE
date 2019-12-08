@@ -1,0 +1,8 @@
+workspace(name = "apollo")
+
+#protobuf 3.3
+http_archive(
+    name = "com_google_protobuf",
+    strip_prefix = "protobuf-3.3.0",
+    url = "file:///home/tmp/protobuf-3.3.0.tar.gz",
+)

@@ -112,13 +112,13 @@ function main(){
 
     if [ ${ARCH} == "x86_64" ]; then
         if [ "${USER}" != "root" ]; then
-            docker exec $CYBER_DOCKER bash -c 'docker_adduser.sh'
+            docker exec $CYBER_DOCKER bash -c 'docker/docker_adduser.sh'
         fi
     else
         echo "!!! Due to the problem with 'docker exec' on Drive PX platform, please run 'docker_adduser.sh' for the first time when you get into the docker !!!"
     fi
 
-    echo "Finished setting up Geek docker environment. Now you can enter with: \nbash docker/into_geek.sh"
+    echo "Finished setting up Geek docker environment. Now you can enter with: \nbash docker/into.sh"
     echo "Enjoy!"
 }
 

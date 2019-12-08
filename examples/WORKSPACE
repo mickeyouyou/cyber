@@ -1,0 +1,5 @@
+new_local_repository(
+    name = "cyber",
+    build_file = "third_party/cyber.BUILD",
+    path="/cyber/include",
+)
