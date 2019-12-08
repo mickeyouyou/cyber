@@ -1,1 +1,8 @@
 log/*
+
+*.pyc
+
+hello/bazel*
+hello/bazel-*
+
+hello/bazel-out
