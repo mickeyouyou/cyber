@@ -1,6 +1,5 @@
 package(default_visibility = ["//visibility:public"])
 
-
 cc_binary(
     name = "hello-world",
     srcs = ["hello-world.cc"],
@@ -8,7 +7,6 @@ cc_binary(
         ":hello-greet",
     ],
 )
-
 
 cc_library(
     name = "hello-greet",
@@ -32,8 +30,8 @@ cc_library(
         "example_component.h",
     ],
     deps = [
-        "//cyber",
-        "//modules/sensors/proto:sensors_cc_proto",
+        "@cyber",
+        #"//cyber/examples/proto:examples_cc_proto",
     ],
 )
 
@@ -41,8 +39,8 @@ cc_binary(
     name = "talker",
     srcs = ["talker.cc"],
     deps = [
-        "//cyber",
-        "//modules/examples/proto:examples_cc_proto",
+        "@cyber",
+        "//proto:examples_cc_proto",
     ],
 )
 
@@ -50,7 +48,7 @@ cc_binary(
     name = "performance_talker",
     srcs = ["performance_talker.cc"],
     deps = [
-        "//cyber",
+        "@cyber",
     ],
 )
 
@@ -58,8 +56,8 @@ cc_binary(
     name = "listener",
     srcs = ["listener.cc"],
     deps = [
-        "//cyber",
-        "//modules/examples/proto:examples_cc_proto",
+        "@cyber",
+        "//proto:examples_cc_proto",
     ],
 )
 
@@ -67,7 +65,7 @@ cc_binary(
     name = "performance_listener",
     srcs = ["performance_listener.cc"],
     deps = [
-        "//cyber",
+        "@cyber",
     ],
 )
 
@@ -75,34 +73,34 @@ cc_binary(
     name = "paramserver",
     srcs = ["paramserver.cc"],
     deps = [
-        "//cyber",
-        "//cyber/parameter",
+        "@cyber",
+        #"@cyber/parameter",
     ],
 )
 
-cc_binary(
-    name = "service",
-    srcs = ["service.cc"],
-    deps = [
-        "//cyber",
-        "//modules/examples/proto:examples_cc_proto",
-    ],
-)
+#cc_binary(
+#    name = "service",
+#    srcs = ["service.cc"],
+#    deps = [
+#        "@cyber",
+#        "//proto:examples_cc_proto",
+#    ],
+#)
 
-cc_binary(
-    name = "record",
-    srcs = ["record.cc"],
-    deps = [
-        "//cyber",
-        "//cyber/proto:record_cc_proto",
-    ],
-)
+#cc_binary(
+#    name = "record",
+#    srcs = ["record.cc"],
+#    deps = [
+#        "@cyber",
+#        #"@cyber/proto:record_cc_proto",
+#    ],
+#)
 
 cc_binary(
     name = "camera",
     srcs = ["camera.cc"],
     deps = [
-        "//cyber",
-        "//modules/examples/proto:examples_cc_proto",
+        "@cyber",
+        "//proto:examples_cc_proto",
     ],
 )

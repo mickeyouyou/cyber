@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
 ******************************************************************************/
-#include "modules/examples/hello-greet.h"
+#include "hello-greet.h"
 #include <string>
 
 std::string get_greet(const std::string& who) { return "Hello " + who; }

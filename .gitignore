@@ -6,3 +6,5 @@ hello/bazel*
 hello/bazel-*
 
 hello/bazel-out
+
+examples/bazel*

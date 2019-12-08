@@ -1,29 +1,0 @@
-
-þ
-!cyber/proto/role_attributes.protoapollo.cyber.protocyber/proto/qos_profile.proto"0
-
-SocketAddr
-ip (	Rip
-port (Rport"ó
-RoleAttributes
-	host_name (	RhostName
-host_ip (	RhostIp
-
-process_id (R	processId
-	node_name (	RnodeName
-node_id (RnodeId!
-channel_name (	RchannelName
-
-channel_id (R	channelId!
-message_type (	RmessageType
-
-proto_desc	 (R	protoDesc
-id
- (Rid?
-qos_profile (2.apollo.cyber.proto.QosProfileR
-qosProfile?
-socket_addr (2.apollo.cyber.proto.SocketAddrR
-socketAddr!
-service_name (	RserviceName
-
-service_id (R	serviceId

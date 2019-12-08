@@ -24,7 +24,7 @@
 #include <ctime>
 #include <iostream>
 #include <string>
-#include "modules/examples/hello-greet.h"
+#include "hello-greet.h"
 
 void print_localtime() {
   std::time_t result = std::time(nullptr);

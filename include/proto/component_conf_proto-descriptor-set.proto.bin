@@ -1,18 +1,0 @@
-
-¿
- cyber/proto/component_conf.protoapollo.cyber.protocyber/proto/qos_profile.proto"š
-ReaderOption
-channel (	Rchannel?
-qos_profile (2.apollo.cyber.proto.QosProfileR
-qosProfile/
-pending_queue_size (:1RpendingQueueSize"±
-ComponentConfig
-name (	Rname(
-config_file_path (	RconfigFilePath$
-flag_file_path (	RflagFilePath:
-readers (2 .apollo.cyber.proto.ReaderOptionRreaders"–
-TimerComponentConfig
-name (	Rname(
-config_file_path (	RconfigFilePath$
-flag_file_path (	RflagFilePath
-interval (Rinterval

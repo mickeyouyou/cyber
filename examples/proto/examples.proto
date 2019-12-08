@@ -1,6 +1,6 @@
 syntax = "proto2";
 
-package apollo.examples.proto;
+package examples.proto;
 
 message SamplesTest1 {
     optional string class_name = 1;

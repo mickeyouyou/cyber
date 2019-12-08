@@ -1,10 +1,0 @@
-
-×
-cyber/proto/perception.protoapollo.cyber.proto"¢
-
-Perception=
-header (2%.apollo.cyber.proto.Perception.HeaderRheader
-msg_id (RmsgId
-result (Rresult&
-Header
-	timestamp (R	timestamp

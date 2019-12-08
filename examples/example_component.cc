@@ -23,11 +23,9 @@ bool ExampleComponent::Init() {
   return true;
 }
 
-bool ExampleComponent::Proc(const std::shared_ptr<Pose>& msg0,
-                            const std::shared_ptr<Image>& msg1) {
-  AINFO << "message from ExampleComponent::Proc()"
-        << "msg0 is :" << msg0->DebugString()
-        << "msg1 is :" << msg1->DebugString();
-
+bool CommonComponentSample::Proc(const std::shared_ptr<Driver>& msg0,
+                                 const std::shared_ptr<Driver>& msg1) {
+  AINFO << "Start common component Proc [" << msg0->msg_id() << "] ["
+        << msg1->msg_id() << "]";
   return true;
 }

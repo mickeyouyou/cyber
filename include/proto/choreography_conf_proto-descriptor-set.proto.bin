@@ -1,21 +1,0 @@
-
-ç
-#cyber/proto/choreography_conf.protoapollo.cyber.proto"[
-ChoreographyTask
-name (	Rname
-	processor (R	processor
-prio (:1Rprio"Î
-ChoreographyConf<
-choreography_processor_num (RchoreographyProcessorNum3
-choreography_affinity (	RchoreographyAffinityB
-choreography_processor_policy (	RchoreographyProcessorPolicy>
-choreography_processor_prio (RchoreographyProcessorPrio/
-choreography_cpuset (	RchoreographyCpuset,
-pool_processor_num (RpoolProcessorNum#
-pool_affinity (	RpoolAffinity2
-pool_processor_policy (	RpoolProcessorPolicy.
-pool_processor_prio	 (RpoolProcessorPrio
-pool_cpuset
- (	R
-poolCpuset:
-tasks (2$.apollo.cyber.proto.ChoreographyTaskRtasks

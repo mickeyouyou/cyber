@@ -17,11 +17,11 @@
 #include "cyber/cyber.h"
 #include "cyber/time/rate.h"
 #include "cyber/time/time.h"
-#include "modules/examples/proto/examples.pb.h"
+#include "proto/examples.pb.h"
 
 using apollo::cyber::Rate;
 using apollo::cyber::Time;
-using apollo::examples::proto::Chatter;
+using examples::proto::Chatter;
 
 int main(int argc, char *argv[]) {
   // init cyber framework

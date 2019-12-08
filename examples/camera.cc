@@ -21,16 +21,15 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
 ******************************************************************************/
-// #include "opencv2/opencv.hpp"
 
 #include "cyber/cyber.h"
 #include "cyber/time/rate.h"
 #include "cyber/time/time.h"
-#include "modules/examples/proto/examples.pb.h"
+#include "proto/examples.pb.h"
 
 using apollo::cyber::Rate;
 using apollo::cyber::Time;
-using apollo::examples::proto::Image;
+using examples::proto::Image;
 
 #if 0
 std::string get_tegra_pipeline(int width, int height, int fps) {

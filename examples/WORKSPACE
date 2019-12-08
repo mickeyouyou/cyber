@@ -1,5 +1,112 @@
+workspace(name = "cyber_b")
+
+load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
+
+# googletest (GTest and GMock)
+http_archive(
+    name = "gtest",
+    build_file = "third_party/gtest.BUILD",
+    sha256 = "58a6f4277ca2bc8565222b3bbd58a177609e9c488e8a72649359ba51450db7d8",
+    strip_prefix = "googletest-release-1.8.0",
+    url = "file:///home/tmp/googletest-release-1.8.0.tar.gz",
+)
+
+# gflags
+new_local_repository(
+    name = "com_github_gflags_gflags",
+    build_file = "third_party/gflags.BUILD",
+    path = "/usr/local/include/gflags",
+)
+
+bind(
+    name = "gflags",
+    actual = "@com_github_gflags_gflags//:gflags",
+)
+
+# glog
+new_local_repository(
+    name = "glog",
+    build_file = "third_party/glog.BUILD",
+    path = "/usr/local/include/glog",
+)
+
+# Google Benchmark
+http_archive(
+    name = "benchmark",
+    build_file = "third_party/benchmark.BUILD",
+    sha256 = "e7334dd254434c6668e33a54c8f839194c7c61840d52f4b6258eee28e9f3b20e",
+    strip_prefix = "benchmark-1.1.0",
+    url = "file:///home/tmp/benchmark-1.1.0.tar.gz",
+)
+
+# cpplint from google style guide
+new_local_repository(
+    name = "google_styleguide",
+    build_file = "third_party/google_styleguide.BUILD",
+    path = "/home/tmp/google_styleguide",
+)
+
+# glew
+new_local_repository(
+    name = "glew",
+    build_file = "third_party/glew.BUILD",
+    path = "/usr/include",
+)
+
+#protobuf 3.3
+#http_archive(
+#    name = "com_google_protobuf",
+#    sha256 = "5e2587dea2f9287885e3b04d3a94ed4e8b9b2d2c5dd1f0032ceef3ea1d153bd7",
+#    strip_prefix = "protobuf-3.3.0",
+#    url = "file:///home/tmp/protobuf-3.3.0.tar.gz",
+#)
+
+
+# protobuf 3.11.1
+http_archive(
+    name = "com_google_protobuf",
+    strip_prefix = "protobuf-3.11.1",
+    url = "file:///home/tmp/protobuf-3.11.1.tar.gz",
+)
+
+# rules_cc defines rules for generating C++ code from Protocol Buffers.
+http_archive(
+    name = "rules_cc",
+    sha256 = "35f2fb4ea0b3e61ad64a369de284e4fbbdcdba71836a5555abb5e194cf119509",
+    strip_prefix = "rules_cc-624b5d59dfb45672d4239422fa1e3de1822ee110",
+    urls = [
+        "https://mirror.bazel.build/github.com/bazelbuild/rules_cc/archive/624b5d59dfb45672d4239422fa1e3de1822ee110.tar.gz",
+        "https://github.com/bazelbuild/rules_cc/archive/624b5d59dfb45672d4239422fa1e3de1822ee110.tar.gz",
+    ],
+)
+
+# rules_proto defines abstract rules for building Protocol Buffers.
+http_archive(
+    name = "rules_proto",
+    sha256 = "73ebe9d15ba42401c785f9d0aeebccd73bd80bf6b8ac78f74996d31f2c0ad7a6",
+    strip_prefix = "rules_proto-2c0468366367d7ed97a1f702f9cd7155ab3f73c5",
+    urls = [
+        "https://mirror.bazel.build/github.com/bazelbuild/rules_proto/archive/2c0468366367d7ed97a1f702f9cd7155ab3f73c5.tar.gz",
+        "https://github.com/bazelbuild/rules_proto/archive/2c0468366367d7ed97a1f702f9cd7155ab3f73c5.tar.gz",
+    ],
+)
+
+load("@rules_cc//cc:repositories.bzl", "rules_cc_dependencies")
+rules_cc_dependencies()
+
+load("@rules_proto//proto:repositories.bzl", "rules_proto_dependencies", "rules_proto_toolchains")
+rules_proto_dependencies()
+rules_proto_toolchains()
+
+new_local_repository(
+    name = "fastrtps",
+    build_file = "third_party/fastrtps.BUILD",
+    path = "/usr/local/fast-rtps",
+)
+
 new_local_repository(
     name = "cyber",
     build_file = "third_party/cyber.BUILD",
     path="/cyber/include",
 )
+
